@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radio button personalizado</title>
+  </head>
+  <body>
+    
+    <form action="/" id="formulario_1" method="POST">
+      <p id="escolha"></p>
+    <div class="radio-container">
+      <label for="radio_D14">
+        <input type="radio" id="radio_D14" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D14</span>
+      </label>
+    </div>
+
+
+    <div class="radio-container">
+      <label for="radio_D15">
+        <input type="radio" id="radio_D15" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D15</span>
+      </label>
+    </div>
+
+    <div class="radio-container">
+      <label for="radio_D18">
+        <input type="radio" id="radio_D18" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D18</span>
+      </label>
+    </div>
+
+    <div class="radio-container">
+      <label for="radio_D23">
+        <input type="radio" id="radio_D23" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D23</span>
+      </label>
+    </div>
+
+    <div class="radio-container">
+      <label for="radio_D25">
+        <input type="radio" id="radio_D25" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D25</span>
+      </label>
+    </div>
+
+    <div class="radio-container">
+      <label for="radio_D26">
+        <input type="radio" id="radio_D26" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D26</span>
+      </label>
+    </div>
+
+    <div class="radio-container">
+      <label for="radio_D27">
+        <input type="radio" id="radio_D27" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D27</span>
+      </label>
+    </div>
+
+    <div class="radio-container">
+      <label for="radio_D28">
+        <input type="radio" id="radio_D28" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D28</span>
+      </label>
+    </div>
+
+    <div class="radio-container">
+      <label for="radio_D33">
+        <input type="radio" id="radio_D33" name="radio" />
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>D33</span>
+      </label>
+    </div>
+
+   
+  </form> 
+  </body>
+</html>
+
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#escolha {
+    position: relative;
+    margin: 90px;  
+}
+body {
+  background: #673ab6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  column-gap: 30px;
+  font-family: sans-serif;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.radio-container label {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.custom-radio {
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.custom-radio,
+span {
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.custom-radio span {
+  content: '';
+  width: 23px;
+  height: 23px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+input[type='radio']:checked + .custom-radio {
+  border-color: #ac70f9;
+}
+
+input[type='radio']:checked + .custom-radio span {
+  background: #ac70f9;
+}
+</style>
+
+
+<script>
+
+if (radio_D14 == true) {
+  let result;  
+  result = 14;
+  document.getElementById("escolha").innerHTML = result; 
+} 
+
+if(radio_D15 == true) {
+  let result; 
+  result = 15;
+  document.getElementById("escolha").innerHTML = result;
+} 
+
+if(radio_D18 == true) {
+  let result; 
+  result = 18;
+  document.getElementById("escolha").innerHTML = result;
+} 
+
+if(radio_D23 == true) {
+  let result; 
+  result = 23;
+  document.getElementById("escolha").innerHTML = result;
+} 
+
+if(radio_D25 == true) {
+  let result; 
+  result = 25;
+  document.getElementById("escolha").innerHTML = result;
+} 
+
+if(radio_D26 == true) {
+  let result; 
+  result = 26;
+  document.getElementById("escolha").innerHTML = result;
+} 
+
+if(radio_D27 == true) {
+  let result; 
+  result = 27;
+  document.getElementById("escolha").innerHTML = result;
+} 
+
+if(radio_D28 == true) {
+  let result; 
+  result = 28;
+  document.getElementById("escolha").innerHTML = result_D28;
+} 
+
+if(radio_D33 == true) {
+  let result; 
+  result = 33;
+  document.getElementById("escolha").innerHTML = result;
+
+}
+  
+</script>
+
